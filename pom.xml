@@ -4,7 +4,7 @@
 
     <groupId>ru.maltsev</groupId>
     <artifactId>petclinic</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -48,7 +48,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/LegDK/petclinic.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>petclinic-0.0.5</tag>
   </scm>
 
 </project>
