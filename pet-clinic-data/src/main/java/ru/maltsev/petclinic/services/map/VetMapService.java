@@ -9,11 +9,11 @@ import ru.maltsev.petclinic.services.VetService;
 import java.util.Set;
 
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private final SpecialitesService specialitesService;
 
-    public VetServiceMap(SpecialitesService specialitesService) {
+    public VetMapService(SpecialitesService specialitesService) {
         this.specialitesService = specialitesService;
     }
 
