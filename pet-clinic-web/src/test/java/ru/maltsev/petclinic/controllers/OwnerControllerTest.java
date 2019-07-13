@@ -103,7 +103,6 @@ class OwnerControllerTest {
 
 
     @Test
-    @Disabled
     void initCreationForm() throws Exception {
         mockMvc.perform(get("/owners/new"))
                 .andExpect(status().isOk())
@@ -114,7 +113,6 @@ class OwnerControllerTest {
     }
 
     @Test
-    @Disabled
     void processCreationForm() throws Exception {
         when(ownerService.save(ArgumentMatchers.any())).thenReturn(Owner.builder().id(1l).build());
 
@@ -127,7 +125,6 @@ class OwnerControllerTest {
     }
 
     @Test
-    @Disabled
     void initUpdateOwnerForm() throws Exception {
         when(ownerService.findById(anyLong())).thenReturn(Owner.builder().id(1l).build());
 
@@ -140,7 +137,6 @@ class OwnerControllerTest {
     }
 
     @Test
-    @Disabled
     void processUpdateOwnerForm() throws Exception {
         when(ownerService.save(ArgumentMatchers.any())).thenReturn(Owner.builder().id(1l).build());
 
